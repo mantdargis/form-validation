@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: sans-serif;
+}
+
+.left-column {
+  background-image: url(images/pic_1.jpg);
+  background-size: cover;
+  width: 35%;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 2%;
+  width: 100%;
+  height: 20%;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.462);
+}
+img {
+  height: 40%;
+  width: 20%;
+  object-fit: contain;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.871);
+  font-size: clamp(17px, 2vw, 1.8rem);
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+}
+
+.right-column {
+  background-color: rgba(241,242,243,255);
+  width: 65%;
+  height: 100vh;
+}
+
+.description {
+  font-size: 140%;
+  font-weight: 550;
+  opacity: .8;
+  width: 100%;
+  height: 26%;
+  letter-spacing: .5px;
+}
+
+.description p {
+  width: 67%;
+  padding: 5% 0 3% 4%;
+  font-style: italic;
+  font-size: clamp(20px, 2vw, 1.5rem);
+}
+
+.description p:nth-child(2) {
+  margin-top: -5.5%;
+}
+
+h2 {
+  margin-left: 4.3%;
+  padding-top: 2%;
+  opacity: .8;
+  font-weight: 400;
+}
+
+form {
+  width: 100%;
+  height: 48%;
+  background-color: white;
+  width: 100%;
+  position: relative;
+  box-shadow: 1px 3px 7px 2px rgba(0,0,0,0.15);
+}
+
+form .form-details {
+  margin-left: 4.3%;
+  margin-top: 2.1%;
+  width: 65.8%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: space-between;
+}
+
+.form-details div {
+  width: 45%;
+}
+
+
+label {
+  font-size: 100%;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+input {
+  width: 100%;
+  height: 55%;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+  font-size: 120%;
+  padding-left: 3%;
+  opacity: .8;
+  transition: all 0.3s;
+  outline: none;
+}
+
+
+input:focus {
+  border: 1px dotted blue;
+  box-shadow: .1px .1px 3px;
+  text-decoration: underline;
+}
+
+
+button {
+  position: absolute;
+  bottom: -20%;
+  left: 3%;
+  background-color: #596D48;
+  height: 13%;
+  /* height: 45px; */
+  width: 27%;
+  /* width: 270px; */
+  border-radius: 8px;
+  border: none ;
+  color: white;
+  letter-spacing: .3px;
+  transition: .1s all;
+  font-size: 100%;
+  outline: none;
+}
+
+button:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+button:active {
+  border: 3px solid rgba(0, 0, 0, 0.46);
+  filter: brightness(120%);
+}
+
+form p {
+  position: absolute;
+  font-size: 100%;
+  /* margin-top: 1.5%;
+  margin-left: 3.5%; */
+  bottom: -28%;
+  left: 3%;
+  letter-spacing: .1px;
+}
+
+a {
+  font-size: 100%;
+  text-decoration: none;
+  color: #596D48;
+}
+
+#message {
+  position: absolute;
+  bottom: -58px;
+
+  margin-left: 33%;
+}
+
+@media only screen and (max-width: 900px) {
+  form .form-details {
+    width: 90%;
+  }
+
+}
